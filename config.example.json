@@ -1,0 +1,31 @@
+{
+  "search": {
+    "keywords": ["it support", "help desk", "network engineer", "technical support"],
+    "locations": ["jakarta", "tangerang", "bandung"],
+    "max_per_platform": 30
+  },
+  "preferences": {
+    "min_score": 7.0
+  },
+  "apply": {
+    "confirm_before_apply": true,
+    "safe_mode": true,
+    "enabled_platforms": ["glints", "kalibrr"],
+    "delay_seconds": [6, 15]
+  },
+  "credentials": {
+    "glints": {
+      "username": "EMAIL_OR_PHONE_GLINTS",
+      "password": "PASSWORD_GLINTS"
+    },
+    "kalibrr": {
+      "kb_csrf": "KB-CSRF_VALUE",
+      "cookie": "COOKIE_VALUE"
+    },
+    "xai_api_key": ""
+  },
+  "cv": {
+    "path": "cv/CV_CAHYONO_IT_SUPPORT_ATS.docx"
+  },
+  "glints_resume_id": ""
+}

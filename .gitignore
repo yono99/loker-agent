@@ -1,0 +1,16 @@
+# Credentials - JANGAN pernah commit config.json berisi kredensial asli
+config.json
+
+# CV pribadi
+cv/
+
+# Runtime artifacts
+data/
+outputs/
+__pycache__/
+*.pyc
+
+# Local env
+.venv/
+venv/
+.env
