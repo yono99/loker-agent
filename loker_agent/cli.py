@@ -46,6 +46,16 @@ def main(argv: List[str] | None = None) -> int:
     keywords = args.keywords.split(",") if args.keywords else cfg.keywords
 
     # ---- scraper selection ----
+    from .scrapers import (
+        DeallsScraper,
+        GlintsScraper,
+        IndeedScraper,
+        KalibrrScraper,
+        KarirhubScraper,
+        KitaLulusScraper,
+        LinkedInScraper,
+    )
+
     platforms = cfg.enabled_platforms
     if args.platforms:
         platforms = [x.strip() for x in args.platforms.split(",") if x.strip()]
@@ -57,6 +67,16 @@ def main(argv: List[str] | None = None) -> int:
             scrapers["glints"] = GlintsScraper(cfg)
         elif plat == "kalibrr":
             scrapers["kalibrr"] = KalibrrScraper(cfg)
+        elif plat == "linkedin":
+            scrapers["linkedin"] = LinkedInScraper(cfg)
+        elif plat == "kitalulus":
+            scrapers["kitalulus"] = KitaLulusScraper(cfg)
+        elif plat == "dealls":
+            scrapers["dealls"] = DeallsScraper(cfg)
+        elif plat == "indeed":
+            scrapers["indeed"] = IndeedScraper(cfg)
+        elif plat == "karirhub":
+            scrapers["karirhub"] = KarirhubScraper(cfg)
 
     matcher = MatcherFactory.build(cfg.xai_api_key, cfg.llm_base_url)
     all_results: List[MatchResult] = []
