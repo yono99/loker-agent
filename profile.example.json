@@ -1,0 +1,14 @@
+{
+  "name": "Nama Kamu",
+  "email": "email@kamu.com",
+  "skills": ["python", "sql", "airflow", "docker", "kubernetes", "git", "linux"],
+  "extra_skills": ["pyspark", "kafka", "dbt"],
+  "job_titles": ["data engineer", "data analyst", "backend developer"],
+  "years_experience": 3,
+  "education": "S1 Teknik Informatika",
+  "summary": "Data engineer dengan pengalaman membangun pipeline ETL.",
+  "answers": {
+    "expected_salary": "15.000.000",
+    "notice_period": "30 hari"
+  }
+}
