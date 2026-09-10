@@ -38,7 +38,7 @@ Loker Agent automates the job search process by scraping job listings from multi
 - ✅ **HTML Reports** – Generate visual reports of all scans and applications.
 - ✅ **Scheduler** – Run regular automated scans on a schedule (daily, weekly, or custom intervals).
 - ✅ **Cover Letter Generation** – Generate personalized cover letters from templates or via LLM.
-- ✅ **Multi-Platform** – Supports Glints, Kalibrr, JobStreet (limited), and extensible for others.
+- ✅ **Multi-Platform** – Supports Glints, Kalibrr, Dealls, JobStreet (limited), and extensible for others.
 
 ---
 
@@ -49,9 +49,9 @@ Loker Agent automates the job search process by scraping job listings from multi
 | **Glints** | ✅ Full | GraphQL/REST API | Uses the same API as the Android app. Full auto-apply support. |
 | **Kalibrr** | ✅ Full | Jobseeker API | Requires cookies and KB-CSRF token. Full auto-apply support. |
 | **JobStreet** | ⚠️ Unstable | Selenium (recommended) | Search API key changes frequently. See [JobStreet Notes](#jobstreet-notes). |
+| **Dealls** | ✅ Full | REST API | Uses the public sejutacita API (no auth). Job search only; auto-apply not supported. |
 | **LinkedIn** | 🚧 In Progress | Web scraping | - |
 | **Indeed** | 🚧 In Progress | Web scraping | - |
-| **Dealls** | 🚧 In Progress | Web scraping | - |
 
 **Note**: You can extend support for additional platforms by implementing a scraper class that inherits from `BaseScraper` (see [Adding a New Platform](#adding-a-new-platform)).
 
@@ -404,7 +404,7 @@ loker-agent/
 │       ├── jobstreet.py         # JobStreet scraper (unstable)
 │       ├── linkedin.py          # LinkedIn scraper (WIP)
 │       ├── indeed.py            # Indeed scraper (WIP)
-│       ├── dealls.py            # Dealls scraper (WIP)
+│       ├── dealls.py            # Dealls scraper
 │       ├── karirhub.py          # KarirHub scraper (WIP)
 │       └── kitalulus.py         # KitaLulus scraper (WIP)
 ├── modules/                     # Additional modules

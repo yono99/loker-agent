@@ -10,7 +10,7 @@
   "apply": {
     "confirm_before_apply": true,
     "safe_mode": true,
-    "enabled_platforms": ["glints", "kalibrr"],
+    "enabled_platforms": ["glints", "kalibrr", "dealls"],
     "delay_seconds": [6, 15]
   },
   "credentials": {
